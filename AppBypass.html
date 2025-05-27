@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rafat Islam Rabby</title>
+  <style>
+    body {
+      background: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #444;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 22px;
+      letter-spacing: 0.5px;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 90px);
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .app-icon {
+      width: 90px;
+      height: 90px;
+      background: #e0e0e0;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 6px 6px 12px #bebebe,
+                  -6px -6px 12px #ffffff;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .app-icon:hover {
+      transform: scale(1.06);
+      box-shadow: inset 6px 6px 12px #bebebe,
+                  inset -6px -6px 12px #ffffff;
+    }
+
+    .app-icon img {
+      width: 38px;
+      height: 38px;
+      margin-bottom: 8px;
+      filter: grayscale(100%) brightness(0) opacity(0.8);
+    }
+
+    .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+      border-radius: 12px;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none; /* Underline fully removed from all links */
+    }
+  </style>
+</head>
+<body>
+  <h1>App Bypass By Rafat</h1>
+
+  <div class="app-grid">
+    <!-- YouTube -->
+    <a class="app-icon" href="intent://com.google.android.youtube/#Intent;scheme=android-app;end">
+      <img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png"/>
+      <div class="app-name">YouTube</div>
+    </a>
+
+    <!-- Phone -->
+    <a class="app-icon" href="tel:7777-7777-7777">
+      <img src="https://img.icons8.com/ios-filled/50/000000/phone.png"/>
+      <div class="app-name">Phone</div>
+    </a>
+
+    <!-- Settings -->
+    <a class="app-icon" href="intent://com.android.settings/#Intent;scheme=android-app;end">
+      <img src="https://img.icons8.com/ios-filled/50/000000/settings.png"/>
+      <div class="app-name">Settings</div>
+    </a>
+  </div>
+</body>
+</html>
